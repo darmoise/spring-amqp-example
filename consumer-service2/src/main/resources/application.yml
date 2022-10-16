@@ -1,0 +1,18 @@
+spring:
+    rabbitmq:
+        addresses: localhost
+        username: guest
+        password: guest
+
+server:
+    port: 9002
+
+rabbitmq:
+    queues:
+        fanout-queue: consumer-service2.fanout.queue
+        direct-queue: consumer-service2.direct.queue
+    routing-keys:
+        direct-queue: 2
+    exchanges:
+        producer-service-fanout-exchange: producer-service.fanout.exchange
+        producer-service-direct-exchange: producer-service.direct.exchange
