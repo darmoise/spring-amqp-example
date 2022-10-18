@@ -7,7 +7,6 @@
         <module>producer-service</module>
         <module>consumer-service1</module>
         <module>consumer-service2</module>
-        <module>consumer-service3</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
