@@ -65,7 +65,7 @@ public class RabbitConfiguration {
     }
 
     @Bean
-    public Binding bindingFanoutBinding(
+    public Binding fanoutQueueBinding(
         final FanoutExchange producerServiceFanoutExchange,
         final Queue fanoutQueue
     ) {
@@ -85,7 +85,7 @@ public class RabbitConfiguration {
     }
 
     @Bean
-    public Binding bindingDirectBinding(
+    public Binding directQueueBinding(
         final DirectExchange producerServiceDirectExchange,
         final Queue directQueue
     ) {
